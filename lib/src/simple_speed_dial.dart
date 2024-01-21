@@ -75,7 +75,7 @@ class _SpeedDialState extends State<SpeedDial>
   void initState() {
     _animationController = widget.controller ??
         AnimationController(
-            vsync: this, duration: const Duration(milliseconds: 450));
+            vsync: this, duration: const Duration(milliseconds: 200));
     _animationController.addListener(() {
       if (mounted) {
         setState(() {});
